@@ -114,3 +114,90 @@ body {
 .aSair {
   text-decoration: none;
 }
+
+.containerMain {
+  position: relative;
+  flex-direction: column;
+  margin-top: 18%;
+  margin-left: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo1 {
+color:#AA6F34;
+text-align: center;
+font-size: 23px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%;
+}
+
+.titulo2 {
+  color: #757575;
+text-align: center;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%;
+}
+
+.faleConosco {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.divisaoUsuarios {
+  flex-direction: column;
+}
+
+.menuUsuarios {
+  box-sizing: border-box;
+  width: 100%;
+  
+}
+
+.menuImagens {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+  padding: 30px;
+  border-left: 8px solid #f9e423;
+}
+
+.menuImagens:hover {
+  border-left: 8px solid #F48221;
+  background-color: #FAA61A;
+  color: #ffffff;
+}
+
+.imagemBotao {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.uluser {
+  display: none;
+  list-style-type: none;
+  
+}
+
+.uluser li {
+  background-color: #faa61a;
+  padding: 30px;
+  border-left: 8px solid #F48221;
+
+}
+
+.uluser li:hover{
+  background-color: #F48221;
+}
+
+.uluser a {
+  text-decoration: none;
+  color: #ffffff;
+}

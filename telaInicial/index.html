@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
   </head>
   <body>
     <!-- <div class="containerTelaInicial"> -->
@@ -31,10 +32,22 @@
           <img src="../imagens/imagemInicio.png" alt="imagemInicio" />
           <p>Incio</p>
         </div>
-        <div class="menuInicio">
-          <img src="../imagens/imagemUsuario.png" alt="imagemUsuario" />
-          <p>Usuários</p>
-          <img src="../imagens/imagemsetadireita.png" alt="imagemsetadireita" />
+        <div class="menuUsuarios">
+          <div class="menuImagens" onclick="abrirmenu()">
+            <div class="imagemBotao">
+              <img src="../imagens/imagemUsuario.png" alt="imagemUsuario" />
+              <div id="user" >Usuários</div>
+            </div>
+            <img
+              src="../imagens/imagemsetadireita.png"
+              alt="imagemsetadireita"
+            />
+          </div>
+
+          <ul id="uluser" class="uluser">
+            <li><a href="">Aluno</a></li>
+            <li><a href="">Professor</a></li>
+          </ul>
         </div>
         <div class="menuInicio">
           <img
@@ -51,15 +64,27 @@
           <p>Meu perfil</p>
         </div>
         <a class="aSair" href="../login/index.html">
-            <div class="menuInicio">
-                <img src="../imagens/imagemSair.png" alt="imagemSair.png" />
-                <p>Sair</p>
-              </div>
+          <div class="menuInicio">
+            <img src="../imagens/imagemSair.png" alt="imagemSair.png" />
+            <p>Sair</p>
+          </div>
         </a>
-        
       </div>
     </nav>
-    <main>oi</main>
+    <main class="containerMain">
+      <div class="titulo1">Olá! Seja bem vindo ao seu</div>
+
+      <div class="titulo2">EMOCIONÔMETRO DE GRUPO</div>
+    </main>
+
+    <div class="faleConosco">
+      <img
+        src="../imagens/imagemFaleConoscoInIcial.png"
+        alt="Imagem fale conosco inIcial inferior direito"
+        width="120px"
+        height="55px"
+      />
+    </div>
 
     <!-- </div> -->
   </body>
