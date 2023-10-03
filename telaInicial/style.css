@@ -5,15 +5,16 @@
 
 body {
   background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .topo {
-  position: relative;
-  z-index: 2;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
   background-color: #ffffff;
 }
 
@@ -70,14 +71,10 @@ body {
 
 .menu {
   display: flex;
-  justify-content:space-between;
   flex-direction: column;
-  position: fixed;
-  z-index: 0;
-  top: 0;
-  left: 0;
+  justify-content: space-between;
   width: 20%;
-  height: 100%;
+  min-height: 100%;
   background-color: #f9e423;
 }
 
@@ -98,31 +95,23 @@ body {
   color: #ffffff;
 }
 
-.conteudoMenu {
-  margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
 .menuInicioUsuario {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
-.aSair {
+a {
   text-decoration: none;
 }
 
 .containerMain {
-  position: relative;
-  flex-direction: column;
-  margin-top: 18%;
-  margin-left: 13%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 20px;
 }
 
 .titulo1 {
@@ -135,7 +124,7 @@ line-height: 140%;
 }
 
 .titulo2 {
-  color: #757575;
+color: #757575;
 text-align: center;
 font-size: 30px;
 font-style: normal;
@@ -166,6 +155,8 @@ line-height: 140%;
   justify-content: space-between;
   padding: 30px;
   border-left: 8px solid #f9e423;
+  height: 4px;
+  color:#AA6F34;
 }
 
 .menuImagens:hover {
@@ -200,4 +191,10 @@ line-height: 140%;
 .uluser a {
   text-decoration: none;
   color: #ffffff;
+  margin-left: 32px;
+}
+
+.conteudo {
+  display: flex;
+  flex-grow: 1;
 }

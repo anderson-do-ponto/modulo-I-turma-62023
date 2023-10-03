@@ -1,4 +1,4 @@
-function abrirmenu (){
+function abrirMenu (){
     const lista = document.getElementById("uluser")
 
     if (lista.style.display === "none" || lista.style.display === "") {

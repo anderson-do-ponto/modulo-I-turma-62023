@@ -28,10 +28,13 @@
     <main class="conteudo">
       <nav class="menu">
         <div class="menuInicioUsuario">
-          <div class="menuInicio">
-            <img src="../imagens/imagemInicio.png" alt="imagemInicio" />
-            <p>Incio</p>
-          </div>
+          <a href="../telaInicial/index.html">
+            <div class="menuInicio">
+              <img class="imgmenu" src="../imagens/imagemInicio.png" alt="imagemInicio" />
+              <p>Incio</p>
+            </div>
+          </a>
+
           <div class="menuUsuarios">
             <div class="menuImagens" onclick="abrirMenu()">
               <div class="imagemBotao">
@@ -45,12 +48,10 @@
             </div>
 
             <ul id="uluser" class="uluser">
-              <li><a href="">Professor</a></li>
               <li><a href="">Aluno</a></li>
+              <li><a href="">Professor</a></li>
             </ul>
           </div>
-
-          <a href="../emocionometro/index.html">
           <div class="menuInicio">
             <img
               src="../imagens/coracaoEmocionometro.png"
@@ -58,7 +59,6 @@
             />
             <p>Emocionômetro</p>
           </div>
-        </a>
         </div>
 
         <div class="menuInferior">
@@ -69,7 +69,7 @@
             />
             <p>Meu perfil</p>
           </div>
-          <a class="aSair" href="../login/index.html">
+          <a href="../login/index.html">
             <div class="menuInicio">
               <img src="../imagens/imagemSair.png" alt="imagemSair.png" />
               <p>Sair</p>
@@ -78,20 +78,40 @@
         </div>
       </nav>
       <div class="containerMain">
-        <div class="titulo1">Olá! Seja bem vindo ao seu</div>
+        <div class="cabecalho">
+          <h3>Emocionômetro da escola</h3>
+          <img src="../imagens/imagemAba.png" alt="" width="200px"/>
+        </div>
+        <div class="contenierImagems">
+            
+            <div class="primeiraImagem">
+            <img
+              class="imagemAredondada"
+              src="../imagens/graficoEmBarra.png"
+              alt="grafico em barra"
+              width="100%"/>
+            </div>
 
-        <div class="titulo2">EMOCIONÔMETRO DE GRUPO</div>
+            <div class="imagensDolado">
+            <div class="segundaImagem">
+              <div class="primeoraNumero">Total de registros</div>
+              <div class="segundoNumero">156</div>
+            </div>
+
+            <div class="terceiraImagem">
+              <img
+                class="imagemAredondada"
+                src="../imagens/terceiraimagem.png"
+                alt="terceira Imagem"
+                width="300px"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
-    <div class="faleConosco">
-      <img
-        src="../imagens/imagemFaleConoscoInIcial.png"
-        alt="Imagem fale conosco inIcial inferior direito"
-        width="120px"
-        height="50px"
-      />
-    </div>
+
 
     <!-- </div> -->
   </body>
