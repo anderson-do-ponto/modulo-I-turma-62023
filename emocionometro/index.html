@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
+    <script src="../javascript/app.js"></script>
   </head>
   <body>
     <!-- <div class="containerTelaInicial"> -->
@@ -30,7 +30,11 @@
         <div class="menuInicioUsuario">
           <a href="../telaInicial/index.html">
             <div class="menuInicio">
-              <img class="imgmenu" src="../imagens/imagemInicio.png" alt="imagemInicio" />
+              <img
+                class="imgmenu"
+                src="../imagens/imagemInicio.png"
+                alt="imagemInicio"
+              />
               <p>Incio</p>
             </div>
           </a>
@@ -48,8 +52,8 @@
             </div>
 
             <ul id="uluser" class="uluser">
-              <li><a href="">Aluno</a></li>
-              <li><a href="">Professor</a></li>
+              <li><a href="../professores/index.html">Professor</a></li>
+              <li><a href="../aluno/index.html">Aluno</a></li>
             </ul>
           </div>
           <div class="menuInicio">
@@ -78,40 +82,50 @@
         </div>
       </nav>
       <div class="containerMain">
-        <div class="cabecalho">
-          <h3>Emocionômetro da escola</h3>
-          <img src="../imagens/imagemAba.png" alt="" width="200px"/>
-        </div>
-        <div class="contenierImagems">
-            
-            <div class="primeiraImagem">
+        <div class="containerCabecalho">
+          <div class="cabecalhoc"><h3>Emocionômetro da escola</h3></div>
+          <div class="cabecalhoImagemc">
             <img
-              class="imagemAredondada"
+              src="../imagens/imagemAba.png"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </div>
+        <div class="containerImagensc">
+          <div class="primeraColuna">
+            <img
+              class="imagensContainer"
               src="../imagens/graficoEmBarra.png"
-              alt="grafico em barra"
-              width="100%"/>
-            </div>
-
-            <div class="imagensDolado">
-            <div class="segundaImagem">
-              <div class="primeoraNumero">Total de registros</div>
-              <div class="segundoNumero">156</div>
-            </div>
-
-            <div class="terceiraImagem">
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="seguandaColuna">
+            <div class="primeiraImagemc">
               <img
-                class="imagemAredondada"
+                class="imagensContainer"
+                src="../imagens/primeiraImagemc.png"
+                alt=""
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div class="segundaImagemc">
+              <img
+                class="imagensContainer"
                 src="../imagens/terceiraimagem.png"
-                alt="terceira Imagem"
-                width="300px"
+                alt=""
+                width="100%"
+                height="100%"
               />
             </div>
           </div>
         </div>
       </div>
     </main>
-
-
 
     <!-- </div> -->
   </body>

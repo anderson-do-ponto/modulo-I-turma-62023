@@ -4,11 +4,11 @@
   }
   
   body {
-    font-family: "Nunito", sans-serif;
     background-color: #e0e0e0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: "Nunito", sans-serif;
   }
   
   .topo {
@@ -104,62 +104,14 @@
   a {
     text-decoration: none;
   }
-
-  .imgmenu:hover{
-    color: #ffffff;
-  }
   
-  .cabecalho {
+  .containerMain {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
-
-  }
-  .contenierImagems{
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .primeiraImagem {
-    width: 60%;
-    
-  }
-
-  .imagemAredondada {
-    border-radius: 20px;
-  }
- .segundaImagem{
-    background-color:#ffffff;
-    border-radius: 20px;
-    padding: 10px;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 90%;
- }
-
- .terceiraImagem {
-  width: 90%;
- }
-
-  .imagensDolado {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-  }
-
-  .primeoraNumero {
-    font-size: 14px;
-
-  }
-
-  .segundoNumero {
-    font-size: 50px;
-    font-weight: 700;
+    flex-grow: 1;
+    padding: 20px;
   }
   
   .titulo1 {
@@ -221,8 +173,7 @@
   
   .uluser {
     display: none;
-    list-style-type: none;
-    
+    list-style-type: none; 
   }
   
   .uluser li {
@@ -240,73 +191,9 @@
     text-decoration: none;
     color: #ffffff;
     margin-left: 32px;
-    height: 4px;
   }
   
   .conteudo {
     display: flex;
     flex-grow: 1;
   }
-
-  .containerMain {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-grow: 1;
-    width: 80%;
-  }
-
-  .containerCabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 95%;
-    height: 12%;
-    /* background-color: red; */
-  }
-
-  .cabecalhoImagemc {
-    width: 16%;
-    height: 36%;
-    /* background-color: green; */
-  }
-  .containerImagensc {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    width: 95%;
-    height: 77%;
-    /* background-color: red; */
-  }
-  .primeraColuna {
-    width: 70%;
-    height: 100%;
-    /* background-color: green; */
-  }
-
-  .seguandaColuna {
-    display: flex;
-    flex-direction: column;
-    gap: 8%;
-    width: 27%;
-    height: 100%;
-    /* background-color: yellow; */
-  }
-
-  .primeiraImagemc {
-    width: 100%;
-    height: 30%;
-    /* background-color: orange; */
-  }
-
-  .segundaImagemc {
-    width: 100%;
-    height: 62%;
-    /* background-color: orangered; */
-  }
-
-  .imagensContainer {
-    border-radius: 35px
-  }
-

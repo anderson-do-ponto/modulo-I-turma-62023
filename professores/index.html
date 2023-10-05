@@ -29,10 +29,13 @@
     <main class="conteudo">
       <nav class="menu">
         <div class="menuInicioUsuario">
-          <div class="menuInicio">
-            <img src="../imagens/imagemInicio.png" alt="imagemInicio" />
-            <p>Incio</p>
-          </div>
+          <a href="../telaInicial/index.html">
+            <div class="menuInicio">
+              <img src="../imagens/imagemInicio.png" alt="imagemInicio" />
+              <p>Incio</p>
+            </div>
+          </a>
+          
           <div class="menuUsuarios">
             <div class="menuImagens" onclick="abrirMenu()">
               <div class="imagemBotao">
@@ -79,20 +82,23 @@
         </div>
       </nav>
       <div class="containerMain">
-        <div class="titulo1">Olá! Seja bem vindo ao seu</div>
+        <h3>Usuários > Professor</h3>
 
-        <div class="titulo2">EMOCIONÔMETRO DE GRUPO</div>
+        <div class="addProfessor">
+          <div class="inputAdd">
+            <input type="text" placeholder="Pesquise uma palavra chave" class="inputUsuario" id="inputbusca">
+            <img class="imagemAdd" src="../imagens/imagemInputAdd.png" alt="" onclick="buscaProfessirPorNome()">
+          </div>
+          <button class="botaoAdcionar"><a href="../cadastrarprofessor/index.html">Novo usuario</a></button>
+        </div>
+
+        <table id="tabelaProfessor">
+
+
+        </table>
       </div>
+      
     </main>
-
-    <div class="faleConosco">
-      <img
-        src="../imagens/imagemFaleConoscoInIcial.png"
-        alt="Imagem fale conosco inIcial inferior direito"
-        width="120px"
-        height="50px"
-      />
-    </div>
 
     <!-- </div> -->
   </body>

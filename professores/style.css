@@ -4,11 +4,11 @@
   }
   
   body {
-    font-family: "Nunito", sans-serif;
     background-color: #e0e0e0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: "Nunito", sans-serif;
   }
   
   .topo {
@@ -104,62 +104,10 @@
   a {
     text-decoration: none;
   }
-
-  .imgmenu:hover{
-    color: #ffffff;
-  }
   
-  .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-
-  }
-  .contenierImagems{
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .primeiraImagem {
-    width: 60%;
-    
-  }
-
-  .imagemAredondada {
-    border-radius: 20px;
-  }
- .segundaImagem{
-    background-color:#ffffff;
-    border-radius: 20px;
-    padding: 10px;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
- }
-
- .terceiraImagem {
-  width: 90%;
- }
-
-  .imagensDolado {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-  }
-
-  .primeoraNumero {
-    font-size: 14px;
-
-  }
-
-  .segundoNumero {
-    font-size: 50px;
-    font-weight: 700;
+  .containerMain {
+    flex-grow: 1;
+    padding: 20px;
   }
   
   .titulo1 {
@@ -240,7 +188,6 @@
     text-decoration: none;
     color: #ffffff;
     margin-left: 32px;
-    height: 4px;
   }
   
   .conteudo {
@@ -248,65 +195,74 @@
     flex-grow: 1;
   }
 
-  .containerMain {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-grow: 1;
-    width: 80%;
+  table {
+    width: 100%;
+    margin-top: 20px;
+
   }
 
-  .containerCabecalho {
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #e0e0e0;
+    background-color: #ffffff;
+  }
+
+  th{
+    background-color: #e0e0e0;  
+  }
+
+  .addProfessor {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
-    height: 12%;
-    /* background-color: red; */
+    margin-top: 16px;
   }
 
-  .cabecalhoImagemc {
-    width: 16%;
-    height: 36%;
-    /* background-color: green; */
+  .botaoAdcionar {
+  width: 20%;
+  height: 36px;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  background: #00c247;
   }
-  .containerImagensc {
+
+  .inputUsuario {
+    padding-left: 10px;
+    width: 30%;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .inputAdd {
+    position: relative;
+    width: 75%;
+    
+  }
+
+  .imagemAdd {
+    position: absolute;
+    top: 19%;
+    left: 28%;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  .botoesUsuarios {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    width: 95%;
-    height: 77%;
-    /* background-color: red; */
-  }
-  .primeraColuna {
-    width: 70%;
-    height: 100%;
-    /* background-color: green; */
+    justify-content: center;
   }
 
-  .seguandaColuna {
+  span {
     display: flex;
-    flex-direction: column;
-    gap: 8%;
-    width: 27%;
-    height: 100%;
-    /* background-color: yellow; */
+    justify-content: center;
+    gap: 4px;
   }
 
-  .primeiraImagemc {
-    width: 100%;
-    height: 30%;
-    /* background-color: orange; */
+  .thspan {
+    display: flex;
   }
-
-  .segundaImagemc {
-    width: 100%;
-    height: 62%;
-    /* background-color: orangered; */
-  }
-
-  .imagensContainer {
-    border-radius: 35px
-  }
-
