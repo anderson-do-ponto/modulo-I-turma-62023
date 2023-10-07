@@ -103,6 +103,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 .containerMain {
@@ -196,6 +197,7 @@ line-height: 140%;
 }
 
 table {
+  border-collapse: collapse;
   width: 100%;
   margin-top: 20px;
 
@@ -212,7 +214,7 @@ th{
   background-color: #e0e0e0;  
 }
 
-.addProfessor {
+.addProfessorAluno {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -220,12 +222,12 @@ th{
 }
 
 .botaoAdcionar {
-width: 20%;
-height: 36px;
-color: #ffffff;
-border-radius: 8px;
-border: none;
-background: #00c247;
+  width: 100%;
+  height: 36px;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  background: #00c247;
 }
 
 .inputUsuario {
@@ -239,6 +241,39 @@ background: #00c247;
 .inputAdd {
   position: relative;
   width: 75%;
-  
+
 }
 
+.imagemAdd {
+    position: absolute;
+    top: 19%;
+    left: 28%;
+  }
+
+  .botoesUsuarios {
+    display: flex;
+    justify-content: center;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  #iconeativo {
+    margin-left: 10px;
+  }
+  
+  .novoUsuario {
+    position: relative;
+    width: 25%;
+
+  }
+
+  .imagemNovoUsuario {
+    position: absolute;
+    top: 24%;
+    left: 24%;
+    width: 20px;
+  }

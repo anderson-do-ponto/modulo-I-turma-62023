@@ -1,13 +1,6 @@
 {
   "professores": [
     {
-      "nome": "cam",
-      "perfil": "xx",
-      "disciplina": "xxx",
-      "ativo": false,
-      "id": 1
-    },
-    {
       "nome": "Arthur",
       "disciplina": "Desenvolvimento",
       "perfil": "Professor",
@@ -20,6 +13,20 @@
       "perfil": "Coordenador",
       "id": 3,
       "ativo": false
+    },
+    {
+      "nome": "Rual",
+      "perfil": "Professor",
+      "disciplina": "Desenvolvimento",
+      "ativo": true,
+      "id": 4
+    },
+    {
+      "nome": "camila",
+      "perfil": "Professor",
+      "disciplina": "Programação",
+      "ativo": true,
+      "id": 6
     }
   ],
   "alunos": [
@@ -40,6 +47,12 @@
       "nome": "Augusto",
       "turma": "Turma 2 - manhã",
       "ativo": true
+    },
+    {
+      "nome": "camila",
+      "turma": "aluna",
+      "ativo": false,
+      "id": 7
     }
   ]
 }

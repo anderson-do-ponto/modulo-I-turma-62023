@@ -20,8 +20,8 @@ async function buscaProfessores(){
         <th>Nome</th>
         <th>Disciplina</th>
         <th>Perfil</th>
-        <th>Ativo</th>
-        <th>Ações</th>
+        <th><span>Ativo</span></th>
+        <th><span>Ações</span></th>
         </tr>
     </thead>
 
@@ -31,7 +31,7 @@ async function buscaProfessores(){
                 <td>${professor.nome}</td>
                 <td>${professor.disciplina}</td>
                 <td>${professor.perfil}</td>
-                <td>${professor.ativo ? '<img src="../imagens/iconeativo.png" alt="">' : '<img src="../imagens/iconeinativo.png" alt="">'}</td>
+                <td><span>${professor.ativo ? '<span id="iconeativo"><img src="../imagens/iconeativo.png" alt=""></span>' : '<img src="../imagens/iconeinativo.png" alt="">'}</span></td>
                 <td>
                     <span>
                      <img src="../imagens/iconeeditar.png" alt="" onclick="editarprofessores(${professor.id})">
@@ -59,8 +59,8 @@ async function buscaAluno(){
         <tr>
         <th>Nome</th>
         <th>Turma</th>
-        <th>Ativo</th>
-        <th>Ações</th>
+        <th><span>Ativo</span></th>
+        <th><span>Ações</span></th>
         </tr>
     </thead>
 
@@ -69,7 +69,8 @@ async function buscaAluno(){
             <tr>
                 <td>${aluno.nome}</td>
                 <td>${aluno.turma}</td>
-                <td>${aluno.ativo ? '<img src="../imagens/iconeativo.png" alt="">' : '<img src="../imagens/iconeinativo.png" alt="">'}</td>
+                <td><span>${aluno.ativo ? '<span id="iconeativo"><img src="../imagens/iconeativo.png" alt=""></span>' : '<img src="../imagens/iconeinativo.png" alt="">'}</span></td>
+                
                 <td class="botoesUsuarios">
                     <span>
                      <img src="../imagens/iconeeditar.png" alt="" onclick="editarAluno(${aluno.id})">
@@ -151,7 +152,7 @@ async function editarprofessor (){
 
 }
 
-async function buscaProfessirPorNome () {
+async function buscaProfessorPorNome () {
     let busca = document.getElementById('inputbusca').value
 
     const dadosBusca = await fetch(`http://localhost:3000/professores?nome_like=${busca}`)
@@ -164,6 +165,17 @@ async function buscaProfessirPorNome () {
     }
 }
 
+document.addEventListener("keypress", function(e){
+    
+    if(e.key === "Enter"){
+        
+        const btn = document.querySelector(".imagemAdd")
+
+        btn.click()
+
+    }
+})
+
 function exibirResultado (dados){
     const tabela = document.getElementById("tabelaProfessor")
     const corpoDaTabela = `
@@ -172,8 +184,8 @@ function exibirResultado (dados){
         <th>Nome</th>
         <th>Disciplina</th>
         <th>Perfil</th>
-        <th>Ativo</th>
-        <th>Ações</th>
+        <th><span>Ativo</span></th>
+        <th><span>Ações</span></th>
         </tr>
     </thead>
 
@@ -183,7 +195,7 @@ function exibirResultado (dados){
                 <td>${professor.nome}</td>
                 <td>${professor.disciplina}</td>
                 <td>${professor.perfil}</td>
-                <td>${professor.ativo ? '<img src="../imagens/iconeativo.png" alt="">' : '<img src="../imagens/iconeinativo.png" alt="">'}</td>
+                <td><span>${professor.ativo ? '<span id="iconeativo"><img src="../imagens/iconeativo.png" alt=""></span>' : '<img src="../imagens/iconeinativo.png" alt="">'}</span></td>
                 <td>
                     <span>
                      <img src="../imagens/iconeeditar.png" alt="" onclick="editarprofessores(${professor.id})">
@@ -274,6 +286,17 @@ async function buscaAlunoPorNome () {
     }
 }
 
+document.addEventListener("keypress", function(e){
+    
+    if(e.key === "Enter"){
+        
+        const btn = document.querySelector(".imagemAdd")
+
+        btn.click()
+
+    }
+})
+
 function exibirResultadoAluno(dados){
     const tabela = document.getElementById("tabelaAluno")
     const corpoDaTabela = `
@@ -281,8 +304,8 @@ function exibirResultadoAluno(dados){
         <tr>
         <th>Nome</th>
         <th>Turma</th>
-        <th>Ativo</th>
-        <th>Ações</th>
+        <th><span>Ativo</span></th>
+        <th><span>Ações</span></th>
         </tr>
     </thead>
 
@@ -291,7 +314,8 @@ function exibirResultadoAluno(dados){
             <tr>
                 <td>${aluno.nome}</td>
                 <td>${aluno.turma}</td>
-                <td>${aluno.ativo ? '<img src="../imagens/iconeativo.png" alt="">' : '<img src="../imagens/iconeinativo.png" alt="">'}</td>
+                <td><span>${aluno.ativo ? '<span id="iconeativo"><img src="../imagens/iconeativo.png" alt=""></span>' : '<img src="../imagens/iconeinativo.png" alt="">'}</span></td>
+                
                 <td class="botoesUsuarios">
                     <span>
                      <img src="../imagens/iconeeditar.png" alt="" onclick="editarAluno(${aluno.id})">

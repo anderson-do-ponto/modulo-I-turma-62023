@@ -85,12 +85,24 @@
       <div class="containerMain">
         <h3>Usuários > Aluno</h3>
 
-        <div>
+        <!-- <div>
           <input type="text" id="inputAluno">
           <button onclick="buscaAlunoPorNome()">pesquisa</button>
           <button><a href="../cadastrarAluno/index.html">Novo usuario</a></button>
-        </div>
+        </div> -->
 
+        <div class="addProfessorAluno">
+          <div class="inputAdd">
+            <input type="text" placeholder="Pesquise uma palavra chave" class="inputUsuario" id="inputAluno">
+            <img class="imagemAdd" src="../imagens/imagemInputAdd.png" alt="" onclick="buscaAlunoPorNome()">
+          </div>
+
+          <div class="novoUsuario">
+            <button class="botaoAdcionar"><a href="../cadastrarAluno/index.html">Novo usuario</a></button>
+            <img class="imagemNovoUsuario" src="../imagens/imagemnovoUsuario.png" alt="">
+          </div>
+          
+        </div>
 
         <table id="tabelaAluno">
 
