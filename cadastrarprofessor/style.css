@@ -106,12 +106,9 @@
   }
   
   .containerMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     flex-grow: 1;
     padding: 20px;
+    
   }
   
   .titulo1 {
@@ -196,4 +193,36 @@
   .conteudo {
     display: flex;
     flex-grow: 1;
+  }
+
+  .novoCadastro {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .imagemVolta {
+    width: 60%;
+    border-radius: 50%;
+
+  }
+
+  .containerUsuario {
+    /* width: 98%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: 30%;
+    margin-top: 20px;
+    padding: 10px */
+
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: 30%;
+    margin-top: 20px;
+    padding: -4px;
+}
+
+  .cadastroprofessor {
+    display: flex;
   }

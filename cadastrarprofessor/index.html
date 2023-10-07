@@ -83,23 +83,42 @@
         </div>
       </nav>
       <div class="containerMain">
-        <a href="../professores/index.html">volta</a>novo usuario > professor
-        <div>
-          <h2>dados do usuario</h2>
-          <form id="cadastroprofessor">
-            <label for="">nome</label>
-            <input type="text" id="nome">
+        <div class="novoCadastro">
+          <a href="../professores/index.html"><img src="../imagens/imagemVolta.png" alt="" class="imagemVolta"></a>
+          <h3>Novo usuario > professor</h3>
+        </div>
+        
+        <div class="containerUsuario">
+          <h4>Dados do usuario</h4>
+          <form id="cadastroprofessor" class="cadastroprofessor">
+            <div>
+            
+                <label for="">Nome</label><br>
+                <input type="text" id="nome">
+              </div>
+            
+              <div>
+                <label for="">Perfil</label><br>
+                <input type="text" id="perfil">
+              </div>
+              
+              <div>
+                <label for="">Disciplina</label><br>
+                <input type="text" id="disciplina">
+              </div>
+              
+              <div>
+                <label for="">Ativo</label><br>
+                <input type="checkbox" id="ativo">
+              </div>
+            
+            
+            <br>
 
-            <label for="">perfil</label>
-            <input type="text" id="perfil">
-
-            <label for="">disciplina</label>
-            <input type="text" id="disciplina">
-
-            <label for="">ativo</label>
-            <input type="checkbox" id="ativo">
-
-            <button type="button" onclick="cadastraprofessores()">emviar</button>
+            <div>
+              <button type="button" onclick="cadastraprofessores()">emviar</button>
+            </div>
+           
 
           </form>
         </div>
