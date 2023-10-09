@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Emocionômetro</title>
     <link rel="stylesheet" href="style.css" />
     <script src="../javascript/app.js"></script>
   </head>
@@ -29,7 +32,6 @@
     <main class="conteudo">
       <nav class="menu">
         <div class="menuInicioUsuario">
-
           <a href="../telaInicial/index.html">
             <div class="menuInicio">
               <img src="../imagens/imagemInicio.png" alt="imagemInicio" />
@@ -56,14 +58,14 @@
           </div>
 
           <a href="../emocionometro/index.html">
-          <div class="menuInicio">
-            <img
-              src="../imagens/coracaoEmocionometro.png"
-              alt="coracaoEmocionometro.png"
-            />
-            <p>Emocionômetro</p>
-          </div>
-        </a>
+            <div class="menuInicio">
+              <img
+                src="../imagens/coracaoEmocionometro.png"
+                alt="coracaoEmocionometro.png"
+              />
+              <p>Emocionômetro</p>
+            </div>
+          </a>
         </div>
 
         <div class="menuInferior">
@@ -83,28 +85,52 @@
         </div>
       </nav>
       <div class="containerMain">
-        <a href="../aluno/index.html">volta</a>novo usuario > aluno
-        <div>
-          <h2>dados do usuario</h2>
-          <form id="cadastroAluno">
-            <label for="">nome</label>
-            <input type="text" id="nome">
-
-            <label for="">turma</label>
-            <input type="text" id="turma">
-
-            <label for="">ativo</label>
-            <input type="checkbox" id="ativo">
-
-            <button type="button" onclick="cadastraAluno()">emviar</button>
-
-          </form>
+        <div class="cabecalhoNovoCadastro">
+          <div>
+            <a href="../aluno/index.html"
+              ><img src="../imagens/imagemVolta.png" alt="" class="imagemVolta"
+            /></a>
+          </div>
+          <div class="novoUsuario">
+            <h3>Novo Usúario > Aluno</h3>
+          </div>
         </div>
+        <div class="novoCadastro">
+          <div class="containerCadstro">
+            <h3>Dados do usuario</h3>
+            <form id="cadastroaluno" class="cadastroprofessor">
+              <div class="containerbox">
+                <div class="inputBox">
+                  <label for="">Nome</label>
+                  <input type="text" id="nome" />
+                </div>
+
+                <div class="inputBox">
+                  <label for="">Turma</label>
+                  <input type="text" id="turma" />
+                </div>
+
+                <div class="inputBox">
+                  <span class="spanInputBox">
+                    <label for="">Ativo</label>
+                    <input type="checkbox" id="ativo" class="ativo" />
+                  </span>
+                </div>
+              </div>
+
+              <button
+                class="botaoSalva"
+                type="button"
+                onclick="cadastraAluno()"
+              >
+                Salvar
+              </button>
+            </form>
+          </div>
+        </div>
+
       </div>
     </main>
-
-    
-    
 
     <!-- </div> -->
   </body>

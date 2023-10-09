@@ -79,7 +79,51 @@
         </div>
       </nav>
       <div class="containerMain">
-        <a href="../aluno/index.html">volta</a>novo usuario > Aluno
+
+        <div class="cabecalhoNovoCadastro">
+          <div>
+            <a href="../aluno/index.html"
+              ><img src="../imagens/imagemVolta.png" alt="" class="imagemVolta"
+            /></a>
+          </div>
+          <div class="novoUsuario">
+            <h3>Editar Usúario > Aluno</h3>
+          </div>
+        </div>
+        <div class="novoCadastro">
+          <div class="containerCadstro">
+            <h3>Dados do usuario</h3>
+            <form id="cadastroaluno" class="cadastroprofessor">
+              <div class="containerbox">
+                <div class="inputBox">
+                  <label for="">Nome</label>
+                  <input type="text" id="nomeAt" />
+                </div>
+
+                <div class="inputBox">
+                  <label for="">Turma</label>
+                  <input type="text" id="turmaAt" />
+                </div>
+
+                <div class="inputBox">
+                  <span class="spanInputBox">
+                    <label for="">Ativo</label>
+                    <input type="checkbox" id="ativoAt" class="ativo" />
+                  </span>
+                </div>
+              </div>
+
+              <button
+                class="botaoSalva"
+                type="button"
+                onclick="editarAlunos()"
+              >
+                Salvar
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- <a href="../aluno/index.html">volta</a>novo usuario > Aluno
         <div>
           <h2>dados do usuario</h2>
           <form id="cadastroaluno">
@@ -96,7 +140,7 @@
             <button type="button" onclick="editarAlunos()">emviar</button>
 
           </form>
-        </div>
+        </div> -->
       </div>
     </main>
 

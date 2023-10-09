@@ -204,10 +204,11 @@ table {
 }
 
 th, td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 2px solid #e0e0e0;
-  background-color: #ffffff;
+    padding: 6px;
+    text-align: left;
+    border-bottom: 2px solid #e0e0e0;
+    background-color: #ffffff;
+    padding-left: 26px;
 }
 
 th{
@@ -267,13 +268,13 @@ th{
   
   .novoUsuario {
     position: relative;
-    width: 24%;
+    width: 21%;
 
   }
 
   .imagemNovoUsuario {
     position: absolute;
     top: 24%;
-    left: 24%;
+    left: 19%;
     width: 20px;
   }
