@@ -22,10 +22,10 @@
       "id": 4
     },
     {
-      "nome": "",
-      "perfil": "",
-      "disciplina": "",
-      "ativo": false,
+      "nome": "Luiz Arthur",
+      "perfil": "Coordenador",
+      "disciplina": "Programação",
+      "ativo": true,
       "id": 5
     }
   ],
