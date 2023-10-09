@@ -27,20 +27,6 @@
       "disciplina": "Programação",
       "ativo": true,
       "id": 6
-    },
-    {
-      "nome": "amanda",
-      "perfil": "Professor",
-      "disciplina": "Programação",
-      "ativo": false,
-      "id": 7
-    },
-    {
-      "nome": "camila",
-      "perfil": "Professor",
-      "disciplina": "Programação",
-      "ativo": true,
-      "id": 8
     }
   ],
   "alunos": [
