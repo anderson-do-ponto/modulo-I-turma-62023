@@ -9,7 +9,7 @@ function abrirMenu (){
 }
 
 async function buscaProfessores(){
-    const url = await fetch("http://localhost:3000/professores")
+    const url = await fetch("https://db-wy4i.onrender.com/professores")
     
     const dados = await url.json()
     
@@ -49,7 +49,7 @@ async function buscaProfessores(){
 buscaProfessores()
 
 async function buscaAluno(){
-    const url = await fetch("http://localhost:3000/alunos")
+    const url = await fetch("https://db-wy4i.onrender.com/alunos")
     
     const dados = await url.json()
     
@@ -95,7 +95,7 @@ async function cadastraprofessores (){
 
     let dados ={nome, perfil, disciplina, ativo}
 
-    const resposta = await fetch("http://localhost:3000/professores", {
+    const resposta = await fetch("https://db-wy4i.onrender.com/professores", {
       method:"POST", 
       headers:{
         'Content-type':'application/json',
@@ -112,7 +112,7 @@ async function cadastraprofessores (){
 }
 
 async function deletarprofessor(id){
-    const resposta = await fetch(`http://localhost:3000/professores/${id}` , {
+    const resposta = await fetch(`https://db-wy4i.onrender.com/professores/${id}` , {
         method:'DELETE'
     })
 
@@ -136,7 +136,7 @@ async function editarprofessor (){
     let dados ={nome, perfil, disciplina, ativo}
     const parametro = new URLSearchParams(window.location.search);
     const id = parametro.get('id');
-    const resposta = await fetch(`http://localhost:3000/professores/${id}`, {
+    const resposta = await fetch(`https://db-wy4i.onrender.com/professores/${id}`, {
       method:"PUT",
       headers:{
         'Content-type':'application/json',
@@ -155,7 +155,7 @@ async function editarprofessor (){
 async function buscaProfessorPorNome () {
     let busca = document.getElementById('inputbusca').value
 
-    const dadosBusca = await fetch(`http://localhost:3000/professores?nome_like=${busca}`)
+    const dadosBusca = await fetch(`https://db-wy4i.onrender.com/professores?nome_like=${busca}`)
 
     if(dadosBusca.status === 200){
         const dadosFormatado = await dadosBusca.json()
@@ -216,7 +216,7 @@ async function cadastraAluno (){
 
     let dados ={nome, turma,ativo}
 
-    const resposta = await fetch("http://localhost:3000/alunos", {
+    const resposta = await fetch("https://db-wy4i.onrender.com/alunos", {
       method:"POST", 
       headers:{
         'Content-type':'application/json',
@@ -243,7 +243,7 @@ async function editarAlunos (){
     let dados ={nome, turma, ativo}
     const parametro = new URLSearchParams(window.location.search);
     const id = parametro.get('id');
-    const resposta = await fetch(`http://localhost:3000/alunos/${id}`, {
+    const resposta = await fetch(`https://db-wy4i.onrender.com/alunos/${id}`, {
       method:"PUT",
       headers:{
         'Content-type':'application/json',
@@ -260,7 +260,7 @@ async function editarAlunos (){
 }
 
 async function deletarAluno(id){
-    const resposta = await fetch(`http://localhost:3000/alunos/${id}` , {
+    const resposta = await fetch(`https://db-wy4i.onrender.com/alunos/${id}` , {
         method:'DELETE'
     })
 
@@ -276,7 +276,7 @@ async function deletarAluno(id){
 async function buscaAlunoPorNome () {
     let busca = document.getElementById('inputAluno').value
 
-    const dadosBusca = await fetch(`http://localhost:3000/alunos?nome_like=${busca}`)
+    const dadosBusca = await fetch(`https://db-wy4i.onrender.com/alunos?nome_like=${busca}`)
 
     if(dadosBusca.status === 200){
         const dadosFormatado = await dadosBusca.json()
