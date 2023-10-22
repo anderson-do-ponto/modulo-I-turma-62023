@@ -51,8 +51,8 @@
             </div>
 
             <ul id="uluser" class="uluser">
-              <li><a href="../professores/index.html">Professor</a></li>
-              <li><a href="../aluno/index.html">Aluno</a></li>
+              <a href="../professores/index.html"><li>Professor</li></a>
+              <a href="../aluno/index.html"><li>Aluno</li></a>
             </ul>
           </div>
 
@@ -119,10 +119,11 @@
                 </div>
 
                 <div class="inputBox">
-                  <span class="spanInputBox">
-                    <label for="">Ativo</label>
-                    <input type="checkbox" id="ativoAt" class="ativo" />
-                  </span>
+                  <label for="ativo" class="ativo">Ativo</label>
+                  <input type="checkbox" id="ativoAt" checked />
+                  <label for="ativoAt" class="switch">
+                    <span class="slider"></span>
+                  </label>
                 </div>
               </div>
 
@@ -136,27 +137,6 @@
             </form>
           </div>
         </div>
-
-        <!-- <a href="../professores/index.html">volta</a>novo usuario > professor
-        <div>
-          <h2>dados do usuario</h2>
-          <form id="cadastroprofessor">
-            <label for="">nome</label>
-            <input type="text" id="nomeAt">
-
-            <label for="">perfil</label>
-            <input type="text" id="perfilAt">
-
-            <label for="">disciplina</label>
-            <input type="text" id="disciplinaAt">
-
-            <label for="">ativo</label>
-            <input type="checkbox" id="ativoAt">
-
-            <button type="button" onclick="editarprofessor()">emviar</button>
-
-          </form>
-        </div> -->
       </div>
     </main>
 

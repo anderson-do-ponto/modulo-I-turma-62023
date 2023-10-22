@@ -52,8 +52,8 @@
             </div>
 
             <ul id="uluser" class="uluser">
-              <li><a href="../professores/index.html">Professor</a></li>
-              <li><a href="../aluno/index.html">Aluno</a></li>
+              <a href="../professores/index.html"><li>Professor</li></a>
+              <a href="../aluno/index.html"><li>Aluno</li></a>
             </ul>
           </div>
 
@@ -120,10 +120,11 @@
                 </div>
 
                 <div class="inputBox">
-                  <span class="spanInputBox">
-                    <label for="">Ativo</label>
-                    <input type="checkbox" id="ativo" class="ativo" />
-                  </span>
+                  <label for="ativo" class="ativo">Ativo</label>
+                  <input type="checkbox" id="ativo" checked />
+                  <label for="ativo" class="switch">
+                    <span class="slider"></span>
+                  </label>
                 </div>
               </div>
 
