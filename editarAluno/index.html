@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Emocionômetro</title>
     <link rel="stylesheet" href="style.css" />
     <script src="../javascript/app.js"></script>
   </head>
@@ -48,8 +48,8 @@
             </div>
 
             <ul id="uluser" class="uluser">
-              <li><a href="../professores/index.html">Professor</a></li>
-              <li><a href="../aluno/index.html">Aluno</a></li>
+              <a href="../professores/index.html"><li>Professor</li></a>
+              <a href="../aluno/index.html"><li>Aluno</li></a>  
             </ul>
           </div>
 
@@ -108,10 +108,11 @@
                 </div>
 
                 <div class="inputBox">
-                  <span class="spanInputBox">
-                    <label for="">Ativo</label>
-                    <input type="checkbox" id="ativoAt" class="ativo" />
-                  </span>
+                  <label for="ativo" class="ativo">Ativo</label>
+                  <input type="checkbox" id="ativoAt" checked />
+                  <label for="ativoAt" class="switch">
+                    <span class="slider"></span>
+                  </label>
                 </div>
               </div>
 
