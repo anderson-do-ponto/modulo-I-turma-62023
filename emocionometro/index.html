@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
     <title>Emocionômetro</title>
     <link rel="stylesheet" href="style.css" />
     <script src="../javascript/app.js"></script>
@@ -30,15 +31,11 @@
         <div class="menuInicioUsuario">
           <a href="../telaInicial/index.html">
             <div class="menuInicio">
-              <img
-                class="imgmenu"
-                src="../imagens/imagemInicio.png"
-                alt="imagemInicio"
-              />
+              <img src="../imagens/imagemInicio.png" alt="imagemInicio" />
               <p>Incio</p>
             </div>
           </a>
-
+          
           <div class="menuUsuarios">
             <div class="menuImagens" onclick="abrirMenu()">
               <div class="imagemBotao">
@@ -52,10 +49,12 @@
             </div>
 
             <ul id="uluser" class="uluser">
-              <li><a href="../professores/index.html">Professor</a></li>
-              <li><a href="../aluno/index.html">Aluno</a></li>
+              <a href="../professores/index.html"><li>Professor</li></a>
+              <a href="../aluno/index.html"><li>Aluno</li></a>  
             </ul>
           </div>
+
+          <a href="../emocionometro/index.html">
           <div class="menuInicio">
             <img
               src="../imagens/coracaoEmocionometro.png"
@@ -63,6 +62,7 @@
             />
             <p>Emocionômetro</p>
           </div>
+        </a>
         </div>
 
         <div class="menuInferior">
@@ -82,49 +82,27 @@
         </div>
       </nav>
       <div class="containerMain">
-        <div class="containerCabecalho">
-          <div class="cabecalhoc"><h3>Emocionômetro da escola</h3></div>
-          <div class="cabecalhoImagemc">
-            <img
-              src="../imagens/imagemAba.png"
-              alt=""
-              width="100%"
-              height="100%"
-            />
+        <h3>Usuários > Professor</h3>
+
+        <div class="addProfessorAluno">
+          <div class="inputAdd">
+            <input type="text" placeholder="Pesquise uma palavra chave" class="inputUsuario" id="inputbusca">
+            <img class="imagemAdd" src="../imagens/imagemInputAdd.png" alt="" onclick="buscaProfessorPorNome()">
           </div>
+         
+          <div class="novoUsuario">
+            <a href="../cadastrarprofessor/index.html"><button class="botaoAdcionar">Novo usuario</button></a>
+            <img class="imagemNovoUsuario" src="../imagens/imagemnovoUsuario.png" alt="">
+          </div>
+          
         </div>
-        <div class="containerImagensc">
-          <div class="primeraColuna">
-            <img
-              class="imagensContainer"
-              src="../imagens/graficoEmBarra.png"
-              alt=""
-              width="100%"
-              height="100%"
-            />
-          </div>
-          <div class="seguandaColuna">
-            <div class="primeiraImagemc">
-              <img
-                class="imagensContainer"
-                src="../imagens/primeiraImagemc.png"
-                alt=""
-                width="100%"
-                height="100%"
-              />
-            </div>
-            <div class="segundaImagemc">
-              <img
-                class="imagensContainer"
-                src="../imagens/terceiraimagem.png"
-                alt=""
-                width="100%"
-                height="100%"
-              />
-            </div>
-          </div>
-        </div>
+
+        <table id="tabelaProfessor">
+
+
+        </table>
       </div>
+      
     </main>
 
     <!-- </div> -->
