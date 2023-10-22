@@ -142,7 +142,7 @@
   .menuUsuarios {
     box-sizing: border-box;
     width: 100%;
-    
+    cursor: pointer;
   }
   
   .menuImagens {
@@ -176,9 +176,9 @@
   
   .uluser li {
     background-color: #faa61a;
-    padding: 30px;
-    border-left: 8px solid #F48221;
-  
+    padding: 20px;
+    border-left: 8px solid #f48221;
+    padding-left: 66px;
   }
   
   .uluser li:hover{
@@ -188,7 +188,7 @@
   .uluser a {
     text-decoration: none;
     color: #ffffff;
-    margin-left: 32px;
+    /* margin-left: 32px; */
   }
   
   .conteudo {
@@ -207,8 +207,15 @@
     padding: 6px;
     text-align: left;
     border-bottom: 2px solid #e0e0e0;
-    background-color: #ffffff;
     padding-left: 26px;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #FCFCFC
 }
 
   th{
@@ -229,6 +236,7 @@
   border-radius: 8px;
   border: none;
   background: #00c247;
+  cursor: pointer;
   }
 
   .inputUsuario {
@@ -249,6 +257,7 @@
     position: absolute;
     top: 19%;
     left: 28%;
+    cursor: pointer;
   }
 
   .botoesUsuarios {
@@ -260,6 +269,10 @@
     display: flex;
     justify-content: center;
     gap: 4px;
+  }
+
+  span img {
+    cursor: pointer;
   }
 
   #iconeativo {
