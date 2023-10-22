@@ -86,12 +86,12 @@ body {
   width: 100%;
   height: 50px;
   align-items: center;
-  color: #AA6F34;
+  color: #aa6f34;
   border-left: 8px solid #f9e423;
 }
-.menuInicio:hover{
-  border-left: 8px solid #F48221;
-  background-color: #FAA61A;
+.menuInicio:hover {
+  border-left: 8px solid #f48221;
+  background-color: #faa61a;
   color: #ffffff;
 }
 
@@ -112,21 +112,21 @@ a {
 }
 
 .titulo1 {
-color:#AA6F34;
-text-align: center;
-font-size: 23px;
-font-style: normal;
-font-weight: 700;
-line-height: 140%;
+  color: #aa6f34;
+  text-align: center;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
 }
 
 .titulo2 {
-color: #757575;
-text-align: center;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: 140%;
+  color: #757575;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
 }
 
 .faleConosco {
@@ -142,7 +142,7 @@ line-height: 140%;
 .menuUsuarios {
   box-sizing: border-box;
   width: 100%;
-  
+  cursor: pointer;
 }
 
 .menuImagens {
@@ -153,12 +153,12 @@ line-height: 140%;
   padding: 30px;
   border-left: 8px solid #f9e423;
   height: 4px;
-  color:#AA6F34;
+  color: #aa6f34;
 }
 
 .menuImagens:hover {
-  border-left: 8px solid #F48221;
-  background-color: #FAA61A;
+  border-left: 8px solid #f48221;
+  background-color: #faa61a;
   color: #ffffff;
 }
 
@@ -171,24 +171,23 @@ line-height: 140%;
 .uluser {
   display: none;
   list-style-type: none;
-  
 }
 
 .uluser li {
   background-color: #faa61a;
-  padding: 30px;
-  border-left: 8px solid #F48221;
-
+  padding: 20px;
+  border-left: 8px solid #f48221;
+  padding-left: 66px;
 }
 
-.uluser li:hover{
-  background-color: #F48221;
+.uluser li:hover {
+  background-color: #f48221;
 }
 
 .uluser a {
   text-decoration: none;
   color: #ffffff;
-  margin-left: 32px;
+  /* margin-left: 32px; */
 }
 
 .conteudo {
@@ -200,19 +199,26 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 20px;
-
 }
 
-th, td {
-    padding: 6px;
-    text-align: left;
-    border-bottom: 2px solid #e0e0e0;
-    background-color: #ffffff;
-    padding-left: 26px;
+th,
+td {
+  padding: 6px;
+  text-align: left;
+  border-bottom: 2px solid #e0e0e0;
+  padding-left: 26px;
 }
 
-th{
-  background-color: #e0e0e0;  
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #FCFCFC
+}
+
+th {
+  background-color: #e0e0e0;
 }
 
 .addProfessorAluno {
@@ -229,6 +235,7 @@ th{
   border-radius: 8px;
   border: none;
   background: #00c247;
+  cursor: pointer;
 }
 
 .inputUsuario {
@@ -242,39 +249,42 @@ th{
 .inputAdd {
   position: relative;
   width: 75%;
-
 }
 
 .imagemAdd {
-    position: absolute;
-    top: 19%;
-    left: 28%;
-  }
+  position: absolute;
+  top: 19%;
+  left: 28%;
+  cursor: pointer;
+}
 
-  .botoesUsuarios {
+/* .botoesUsuarios {
     display: flex;
     justify-content: center;
-  }
+  } */
 
-  span {
-    display: flex;
-    justify-content: center;
-    gap: 4px;
-  }
+span {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
 
-  #iconeativo {
-    margin-left: 10px;
-  }
-  
-  .novoUsuario {
-    position: relative;
-    width: 21%;
+span img {
+  cursor: pointer;
+}
 
-  }
+#iconeativo {
+  margin-left: 10px;
+}
 
-  .imagemNovoUsuario {
-    position: absolute;
-    top: 24%;
-    left: 19%;
-    width: 20px;
-  }
+.novoUsuario {
+  position: relative;
+  width: 16%;
+}
+
+.imagemNovoUsuario {
+  position: absolute;
+  top: 29%;
+  left: 15%;
+  width: 17px;
+}
