@@ -219,6 +219,18 @@ tr:nth-child(even) {
 
 th {
   background-color: #e0e0e0;
+<<<<<<< HEAD
+=======
+}
+td:nth-child(5n+1){
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+td:nth-child(5n+4){
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+>>>>>>> 254f1d422599a8237e068f772ee27b3e3af7ac81
 }
 
 .addProfessorAluno {
