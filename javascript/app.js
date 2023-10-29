@@ -71,7 +71,7 @@ async function buscaAluno(){
                 <td>${aluno.turma}</td>
                 <td><span>${aluno.ativo ? '<span id="iconeativo"><img src="../imagens/iconeativo.png" alt=""></span>' : '<img src="../imagens/iconeinativo.png" alt="">'}</span></td>
                 
-                <td class="botoesUsuarios">
+                <td>
                     <span>
                      <img src="../imagens/iconeeditar.png" alt="" onclick="editarAluno(${aluno.id})">
                      <img src="../imagens/iconedeletar.png" alt="" onclick="deletarAluno(${aluno.id})">
